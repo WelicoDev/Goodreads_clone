@@ -1,0 +1,9 @@
+.book_review_picture {
+    width: 180px;
+    height: 200px;
+    border-radius: 5px;
+}
+.center {
+   margin: 0 auto;
+   display: block;
+}

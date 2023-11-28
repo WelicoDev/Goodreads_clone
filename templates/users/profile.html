@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Profile{% endblock %}
+{% block content %}
+
+    <div class="row">
+        <div class="col-md-4">
+            <img class="profile_photo_style" alt="profile picture" src="{{ user.profile_picture.url }}">
+            <h3 class="mt-3">@{{ user.username }}</h3>
+        </div>
+        <div class="col-md-6">
+            <h2 class="mb-4 mt-6">Profile</h2>
+            <p class="form-control border-success">Username : {{ user.username }}</p>
+            <p class="form-control border-success">First Name : {{ user.first_name }}</p>
+            <p class="form-control border-success">Last Name : {{ user.last_name }} </p>
+            <p class="form-control border-success">Email : {{ user.email }}</p>
+            <p class="form-control border-success">Joined : {{ user.date_joined | date:"M d, Y"}}</p>
+
+            <div class="mt-4">
+               <a href="{% url 'books:books_list' %}" class="btn btn-primary">Back</a>
+               <a class="btn btn-success" href="{% url 'users:profile_edit' %}">update</a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
