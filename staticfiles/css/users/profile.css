@@ -1,0 +1,10 @@
+.profile_photo_style {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+.small_profile_photo_style{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}

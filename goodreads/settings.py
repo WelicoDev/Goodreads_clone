@@ -12,7 +12,7 @@ SECRET_KEY = 'django-insecure-j^__t#bv45!2^o^!^-(9c$1trn2b^uojc%l$_5zhzekgl01!q%
 
 DEBUG = config('DEBUG')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 LOGIN_URL = "users:login"
@@ -146,6 +146,7 @@ REST_FRAMEWORK = {
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR/'static']
+STATIC_ROOT = BASE_DIR/'staticfiles'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR/'media'
