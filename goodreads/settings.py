@@ -87,12 +87,8 @@ WSGI_APPLICATION = 'goodreads.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config('DB_NAME'),
-        'USER': config('DB_USER'),
-        'PASSWORD':config('PASSWORD'),
-        'PORT':config('PORT'),
-        'HOST':config('HOST'),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
